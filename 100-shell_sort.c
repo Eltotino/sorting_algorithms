@@ -21,7 +21,7 @@ void shell_sort(int *array, size_t size)
 	{
 		for (a = btwn; a < size; a++)
 		{
-			insert  = array[a];
+			insert = array[a];
 			b = a;
 			while (b > (btwn - 1) && array[b - btwn] >= insert)
 			{
