@@ -11,9 +11,9 @@
 void swap(listint_t **one, listint_t **two)
 {
 	if ((*one)->prev)
-		(*one)->prev->next = *two;
+			(*one)->prev->next = *two;
 	if ((*two)->next)
-		(*two)->next->prev = *one;
+			(*two)->next->prev = *one;
 	(*one)->next = (*two)->next;
 	(*two)->prev = (*one)->prev;
 	(*two)->next = *one;
